@@ -63,7 +63,7 @@ public class InertialArray {
     // array having maximum value as even
     private static boolean hasMaxElementEven(int[] array) {
 
-        max = 0;
+        max = 0;  // what if the input array contains negative integers?
         for (int i = 0; i < array.length; i++) {
             if (array[i] >= max) {
                 max = array[i];
