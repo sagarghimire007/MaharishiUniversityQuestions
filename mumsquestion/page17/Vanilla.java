@@ -29,6 +29,10 @@ public class Vanilla {
 
         for (int i = 0; i < a.length; i++) {
             element = (a[i] < 0) ? (a[i] * -1) : a[i]; // conditional expression
+            if (element == 0 && element != checkElement) { 
+
+                return 0;
+             }
             while (element != 0) {
                 nextElement = element % 10;
                 element = element / 10;
